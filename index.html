@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <!-- <img src="images/logo.png" alt="" class="logo"> -->
+            <h1 style="color: white; letter-spacing: 2px;">harikesh</h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Bookings</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+
+            <!-- THIS IS THE MAIN CODE -->
+            <img src="images/unnamed.jpg" alt="" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/user.png" alt="">
+                        <h2>Harikesh Yadav</h2>
+                    </div>
+                    <hr>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="images/profile.png" alt="">
+                        <p>Profile</p>
+
+                    </a>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="images/setting.png" alt="">
+                        <p>Settings & Privacy</p>
+
+                    </a>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="images/help.png" alt="">
+                        <p>Help & Support</p>
+
+                    </a>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="images/logout.png" alt="">
+                        <p>Logout</p>
+
+                    </a>
+                </div>  
+            </div>
+        </nav>
+    </div>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+
+</html>
